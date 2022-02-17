@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      .form-container {
+        width: 80vw;
+        height: 90vh;
+        background-color: rgb(110, 175, 161);
+        margin: 3% 10%;
+      }
+      .form-name {
+        text-align: center;
+        padding: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: auto;
+      }
+      input,
+      select {
+        padding: 6px;
+        margin: 5px;
+      }
+      input[type="checkbox"] {
+        width: 40px;
+        height: 30px;
+      }
+      button {
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="form-name">REGISTER</h2>
+      <form action="">
+        <label for="name">NAME</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Please enter your name here"
+          required
+        />
+        <label for="email">EMAIL</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Please enter your email here"
+          required
+        />
+        <label for="phone">PHONE</label>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Please enter your phone number here"
+          required
+        />
+        <label for="age">AGE</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="Please enter your age here"
+          required
+        />
+        <label for="country">COUNTRY</label>
+        <select name="country">
+          <option value="India">INDIA</option>
+          <option value="Frace">FRANCE</option>
+          <option value="Italy">ITALY</option>
+          <option value="uk">UK</option>
+        </select>
+        <label for="accept terms">Accept Terms & Conditions</label>
+        <input type="checkbox" name="accept terms" required />
+        <button>REGISTER</button>
+      </form>
+    </div>
+  </body>
+</html>
